@@ -1,0 +1,541 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AMC_MANAGEMENT_SYSTEM
+</name>
+</assembly>
+<members>
+<member name="T:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconamc">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconamc2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconamc21">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconamc22">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconcomplain">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.ICONCUSTOMER">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.ICONCUSTOMER1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconemployee">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconexit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconhelp">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconmastre">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconmis">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconproduct">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconreport">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconreport1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconservices">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconservices1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMC_MANAGEMENT_SYSTEM.My.Resources.Resources.iconservices2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.company_mstrDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_cunsume_service_wise_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_cunsume_complain_wise_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_cunsume_ServiceAndcomplain_wise_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_consume_complain_wise_groupby_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_consume_service_wise_groupby_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_tblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_with_amc_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.service_tblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_with_amc_and_ser_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_payment_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_payment_outstanding_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.service_emp_per_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.amc_city_per_details_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.contract_details_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.complain_details_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.complain_details_emp_wise_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.complain_per_details_viewDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.company_mstrRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_cunsume_service_wise_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_cunsume_complain_wise_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_cunsume_ServiceAndcomplain_wise_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_consume_complain_wise_groupby_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_consume_service_wise_groupby_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_tblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_with_amc_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.service_tblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_with_amc_and_ser_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_payment_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_payment_outstanding_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.service_emp_per_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.amc_city_per_details_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.contract_details_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.complain_details_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.complain_details_emp_wise_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.complain_per_details_viewRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.company_mstrRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_cunsume_service_wise_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_cunsume_complain_wise_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_cunsume_ServiceAndcomplain_wise_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_consume_complain_wise_groupby_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.product_consume_service_wise_groupby_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_tblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_with_amc_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.service_tblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_with_amc_and_ser_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_details_payment_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.customer_payment_outstanding_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.service_emp_per_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.amc_city_per_details_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.contract_details_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.complain_details_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.complain_details_emp_wise_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSet.complain_per_details_viewRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.company_mstrTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.product_cunsume_service_wise_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.product_cunsume_complain_wise_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.product_cunsume_ServiceAndcomplain_wise_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.product_consume_complain_wise_groupby_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.product_consume_service_wise_groupby_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.customer_tblTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.customer_details_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.customer_details_with_amc_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.service_tblTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.customer_details_with_amc_and_ser_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.customer_details_payment_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.customer_payment_outstanding_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.service_emp_per_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.amc_city_per_details_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.contract_details_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.complain_details_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.complain_details_emp_wise_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.complain_per_details_viewTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(AMC_MANAGEMENT_SYSTEM.ReportDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(AMC_MANAGEMENT_SYSTEM.ReportDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(AMC_MANAGEMENT_SYSTEM.ReportDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.TableAdapterManager.UpdateAll(AMC_MANAGEMENT_SYSTEM.ReportDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:AMC_MANAGEMENT_SYSTEM.ReportDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

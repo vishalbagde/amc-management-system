@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{580ABAB9-5BD9-4DB2-BF33-F38472A618BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AMC_MANAGEMENT_SYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>AMC_MANAGEMENT_SYSTEM</RootNamespace>
+    <AssemblyName>AMC_MANAGEMENT_SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AMC_MANAGEMENT_SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AMC_MANAGEMENT_SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Amc_Mstr_Form.Designer.vb">
+      <DependentUpon>Amc_Mstr_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Amc_Mstr_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category_Mstr_Form.Designer.vb">
+      <DependentUpon>Category_Mstr_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Category_Mstr_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City_Mstr_Form.Designer.vb">
+      <DependentUpon>City_Mstr_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="City_Mstr_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company_Details_Form.Designer.vb">
+      <DependentUpon>Company_Details_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Details_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain_On_Day_Resolve_Form_Form.Designer.vb">
+      <DependentUpon>Complain_On_Day_Resolve_Form_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Complain_On_Day_Resolve_Form_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain_Register_Form.Designer.vb">
+      <DependentUpon>Complain_Register_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Complain_Register_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain_Resolve_Form.Designer.vb">
+      <DependentUpon>Complain_Resolve_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Complain_Resolve_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain_Resolve_List_Form.Designer.vb">
+      <DependentUpon>Complain_Resolve_List_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Complain_Resolve_List_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain_Updation_List_Form.Designer.vb">
+      <DependentUpon>Complain_Updation_List_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Complain_Updation_List_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection_Module.vb" />
+    <Compile Include="Contract_Form.Designer.vb">
+      <DependentUpon>Contract_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contract_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract_Search_From.Designer.vb">
+      <DependentUpon>Contract_Search_From.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contract_Search_From.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract_Service_Allocated_List_Form.Designer.vb">
+      <DependentUpon>Contract_Service_Allocated_List_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contract_Service_Allocated_List_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract_Service_Allocation_Form.Designer.vb">
+      <DependentUpon>Contract_Service_Allocation_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contract_Service_Allocation_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract_Service_Form.Designer.vb">
+      <DependentUpon>Contract_Service_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contract_Service_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract_Service_reminder_Form.Designer.vb">
+      <DependentUpon>Contract_Service_reminder_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contract_Service_reminder_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract_Service_Resolve_Form.Designer.vb">
+      <DependentUpon>Contract_Service_Resolve_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contract_Service_Resolve_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportAmcDetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportAmcDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportAmcDetailsEmpWise.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportAmcDetailsEmpWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCityWiseAMCSoldDetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCityWiseAMCSoldDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportComplainDetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportComplainDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportComplainDetailsEmpWise.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportComplainDetailsEmpWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportComplainOnDayResolve.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportComplainOnDayResolve.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCustomerDetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCustomerDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCustomerDetailsAll.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCustomerDetailsAll.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCustomerDetailsWithAMC.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCustomerDetailsWithAMC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCustomerDetailsWithAMCAndSer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCustomerDetailsWithAMCAndSer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCustomerPaymentDetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCustomerPaymentDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCustomerPaymentOutstanding.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCustomerPaymentOutstanding.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCustomerPaymentPayable.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCustomerPaymentPayable.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportEmployeeServiceOnDayResolve.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportEmployeeServiceOnDayResolve.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportProductComplainWiseGroupBy.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportProductComplainWiseGroupBy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportProductConsumeComplainWise.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportProductConsumeComplainWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportProductConsumeServiceAndComplainWise.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportProductConsumeServiceAndComplainWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportProductServiceWiseGroupBy.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportProductServiceWiseGroupBy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportReportProductConsumeServiceWiseForm.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportReportProductConsumeServiceWiseForm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customer_mstr_Form.Designer.vb">
+      <DependentUpon>Customer_mstr_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_mstr_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Report_Mis_Form.Designer.vb">
+      <DependentUpon>Dashboard_Report_Mis_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Report_Mis_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.vb">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Amc_Details_Form.Designer.vb">
+      <DependentUpon>Report_Amc_Details_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Amc_Details_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_City_Wise_Amc_Details_Form.Designer.vb">
+      <DependentUpon>Report_City_Wise_Amc_Details_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_City_Wise_Amc_Details_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Complain_Details_Form.Designer.vb">
+      <DependentUpon>Report_Complain_Details_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Complain_Details_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Customer_Payment_Details_Form.Designer.vb">
+      <DependentUpon>Report_Customer_Payment_Details_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Customer_Payment_Details_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Payment_Form.Designer.vb">
+      <DependentUpon>Customer_Payment_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Payment_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_payment_Status_Form.Designer.vb">
+      <DependentUpon>Customer_payment_Status_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_payment_Status_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Search_Form.Designer.vb">
+      <DependentUpon>Customer_Search_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Search_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard2.Designer.vb">
+      <DependentUpon>Dashboard2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_AMC_Module_Form.Designer.vb">
+      <DependentUpon>Dashboard_AMC_Module_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_AMC_Module_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Complain_Module_Form.Designer.vb">
+      <DependentUpon>Dashboard_Complain_Module_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Complain_Module_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Customer_Module_Form.Designer.vb">
+      <DependentUpon>Dashboard_Customer_Module_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Customer_Module_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Home_Module_Form.Designer.vb">
+      <DependentUpon>Dashboard_Home_Module_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Home_Module_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Master_Module_Form.Designer.vb">
+      <DependentUpon>Dashboard_Master_Module_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Master_Module_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Product_Module_Form.Designer.vb">
+      <DependentUpon>Dashboard_Product_Module_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Product_Module_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Report_Tps_Form.Designer.vb">
+      <DependentUpon>Dashboard_Report_Tps_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Report_Tps_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_Mstr_Form.Designer.vb">
+      <DependentUpon>Emp_Mstr_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_Mstr_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Module.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pincode_Mstr_Form.Designer.vb">
+      <DependentUpon>Pincode_Mstr_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pincode_Mstr_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product_Mstr_Form.Designer.vb">
+      <DependentUpon>Product_Mstr_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Mstr_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Customer_Details_Form.Designer.vb">
+      <DependentUpon>Report_Customer_Details_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Customer_Details_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Customer_Details_With_Amc_Form.Designer.vb">
+      <DependentUpon>Report_Customer_Details_With_Amc_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Customer_Details_With_Amc_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Emp_On_Date_Service_Resolve_Form.Designer.vb">
+      <DependentUpon>Report_Emp_On_Date_Service_Resolve_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Emp_On_Date_Service_Resolve_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Module.vb" />
+    <Compile Include="Report_Product_Consume_Form.Designer.vb">
+      <DependentUpon>Report_Product_Consume_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Product_Consume_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Product_Consume_ServiceAndComplain_WiseGroupBy_Form.Designer.vb">
+      <DependentUpon>Report_Product_Consume_ServiceAndComplain_WiseGroupBy_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Product_Consume_ServiceAndComplain_WiseGroupBy_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Product_Consume_Service_Wise_Form.Designer.vb">
+      <DependentUpon>Report_Product_Consume_Service_Wise_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Product_Consume_Service_Wise_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="test.Designer.vb">
+      <DependentUpon>test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestCrystal.Designer.vb">
+      <DependentUpon>TestCrystal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestCrystal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Amc_Mstr_Form.resx">
+      <DependentUpon>Amc_Mstr_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category_Mstr_Form.resx">
+      <DependentUpon>Category_Mstr_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="City_Mstr_Form.resx">
+      <DependentUpon>City_Mstr_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company_Details_Form.resx">
+      <DependentUpon>Company_Details_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain_On_Day_Resolve_Form_Form.resx">
+      <DependentUpon>Complain_On_Day_Resolve_Form_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain_Register_Form.resx">
+      <DependentUpon>Complain_Register_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain_Resolve_Form.resx">
+      <DependentUpon>Complain_Resolve_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain_Resolve_List_Form.resx">
+      <DependentUpon>Complain_Resolve_List_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain_Updation_List_Form.resx">
+      <DependentUpon>Complain_Updation_List_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract_Form.resx">
+      <DependentUpon>Contract_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract_Search_From.resx">
+      <DependentUpon>Contract_Search_From.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract_Service_Allocated_List_Form.resx">
+      <DependentUpon>Contract_Service_Allocated_List_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract_Service_Allocation_Form.resx">
+      <DependentUpon>Contract_Service_Allocation_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract_Service_Form.resx">
+      <DependentUpon>Contract_Service_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract_Service_reminder_Form.resx">
+      <DependentUpon>Contract_Service_reminder_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract_Service_Resolve_Form.resx">
+      <DependentUpon>Contract_Service_Resolve_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportAmcDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportAmcDetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportAmcDetailsEmpWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportAmcDetailsEmpWise.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCityWiseAMCSoldDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCityWiseAMCSoldDetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportComplainDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportComplainDetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportComplainDetailsEmpWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportComplainDetailsEmpWise.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportComplainOnDayResolve.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportComplainOnDayResolve.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCustomerDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCustomerDetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCustomerDetailsAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCustomerDetailsAll.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCustomerDetailsWithAMC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCustomerDetailsWithAMC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCustomerDetailsWithAMCAndSer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCustomerDetailsWithAMCAndSer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCustomerPaymentDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCustomerPaymentDetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCustomerPaymentOutstanding.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCustomerPaymentOutstanding.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCustomerPaymentPayable.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCustomerPaymentPayable.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportEmployeeServiceOnDayResolve.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportEmployeeServiceOnDayResolve.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportProductComplainWiseGroupBy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportProductComplainWiseGroupBy.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportProductConsumeComplainWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportProductConsumeComplainWise.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportProductConsumeServiceAndComplainWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportProductConsumeServiceAndComplainWise.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportProductServiceWiseGroupBy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportProductServiceWiseGroupBy.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportReportProductConsumeServiceWiseForm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportReportProductConsumeServiceWiseForm.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_mstr_Form.resx">
+      <DependentUpon>Customer_mstr_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Report_Mis_Form.resx">
+      <DependentUpon>Dashboard_Report_Mis_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Amc_Details_Form.resx">
+      <DependentUpon>Report_Amc_Details_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_City_Wise_Amc_Details_Form.resx">
+      <DependentUpon>Report_City_Wise_Amc_Details_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Complain_Details_Form.resx">
+      <DependentUpon>Report_Complain_Details_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Customer_Payment_Details_Form.resx">
+      <DependentUpon>Report_Customer_Payment_Details_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Payment_Form.resx">
+      <DependentUpon>Customer_Payment_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_payment_Status_Form.resx">
+      <DependentUpon>Customer_payment_Status_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Search_Form.resx">
+      <DependentUpon>Customer_Search_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard2.resx">
+      <DependentUpon>Dashboard2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_AMC_Module_Form.resx">
+      <DependentUpon>Dashboard_AMC_Module_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Complain_Module_Form.resx">
+      <DependentUpon>Dashboard_Complain_Module_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Customer_Module_Form.resx">
+      <DependentUpon>Dashboard_Customer_Module_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Home_Module_Form.resx">
+      <DependentUpon>Dashboard_Home_Module_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Master_Module_Form.resx">
+      <DependentUpon>Dashboard_Master_Module_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Product_Module_Form.resx">
+      <DependentUpon>Dashboard_Product_Module_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Report_Tps_Form.resx">
+      <DependentUpon>Dashboard_Report_Tps_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp_Mstr_Form.resx">
+      <DependentUpon>Emp_Mstr_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pincode_Mstr_Form.resx">
+      <DependentUpon>Pincode_Mstr_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Mstr_Form.resx">
+      <DependentUpon>Product_Mstr_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Customer_Details_Form.resx">
+      <DependentUpon>Report_Customer_Details_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Customer_Details_With_Amc_Form.resx">
+      <DependentUpon>Report_Customer_Details_With_Amc_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Emp_On_Date_Service_Resolve_Form.resx">
+      <DependentUpon>Report_Emp_On_Date_Service_Resolve_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Product_Consume_Form.resx">
+      <DependentUpon>Report_Product_Consume_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Product_Consume_ServiceAndComplain_WiseGroupBy_Form.resx">
+      <DependentUpon>Report_Product_Consume_ServiceAndComplain_WiseGroupBy_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Product_Consume_Service_Wise_Form.resx">
+      <DependentUpon>Report_Product_Consume_Service_Wise_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestCrystal.resx">
+      <DependentUpon>TestCrystal.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AMC_DB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AMC_DB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AMC_DB.mdf</DependentUpon>
+    </Content>
+    <None Include="ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\iconamc22.jpg" />
+    <None Include="Resources\iconamc21.jpg" />
+    <None Include="Resources\iconexit.png" />
+    <None Include="Resources\iconmis.png" />
+    <None Include="Resources\iconamc2.jpg" />
+    <None Include="Resources\iconamc.jpg" />
+    <None Include="Resources\iconreport1.png" />
+    <None Include="Resources\iconreport.png" />
+    <None Include="Resources\iconmastre.png" />
+    <None Include="Resources\iconhelp.png" />
+    <None Include="Resources\iconemployee.png" />
+    <None Include="Resources\iconproduct.png" />
+    <None Include="Resources\iconcomplain.png" />
+    <None Include="Resources\iconservices2.png" />
+    <None Include="Resources\iconservices1.png" />
+    <None Include="Resources\iconservices.png" />
+    <None Include="Resources\ICONCUSTOMER1.png" />
+    <None Include="Resources\ICONCUSTOMER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
